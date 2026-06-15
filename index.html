@@ -1,76 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohamed Asim Mohamed | Data Analyst & Academic Professional</title>
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              cairo: ['Cairo', 'sans-serif'],
-            },
-            colors: {
-              primary: {
-                50: '#eff6ff',
-                100: '#dbeafe',
-                500: '#3b82f6',
-                600: '#2563eb',
-                700: '#1d4ed8',
-                900: '#1e3a8a',
-              }
-            }
-          },
-        },
-      }
-    </script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-      /* Smooth scrolling */
-      html {
-        scroll-behavior: smooth;
-      }
-      
-      /* Direction and Font utilities */
-      .rtl {
-        direction: rtl;
-        font-family: 'Cairo', sans-serif;
-      }
-      .ltr {
-        direction: ltr;
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
-
-<link rel="stylesheet" href="/index.css">
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "vite": "https://esm.sh/vite@^7.3.0",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
-  }
-}
-</script>
-  <script type="module" crossorigin src="./assets/index-D3ImLsgx.js"></script>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Asim Mohamed | Data Analyst & Academic Professional</title>
+  <meta name="description" content="Mohamed Asim Mohamed — Data Analyst, Teaching Assistant in Statistics, and Academic Professional at Horus University. Expert in Python, R, SQL, and Statistical Analysis." />
+  <meta name="keywords" content="Mohamed Asim, Data Analyst, Teaching Assistant, Statistics, Horus University, Python, SQL, R" />
+  <meta name="author" content="Mohamed Asim Mohamed" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./index.css" />
 </head>
-  <body class="bg-slate-50 text-slate-900 transition-colors duration-300">
-    <div id="root"></div>
-    
-    <!-- Entry point script: Essential for Vite/Local dev to load the React app -->
-  </body>
+<body>
+  <!-- Background Effects -->
+  <div class="bg-gradient-mesh" aria-hidden="true"></div>
+  <div class="grid-pattern" aria-hidden="true"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">M.A.</a>
+      
+      <div class="nav-links" id="nav-links">
+        <!-- Links populated by JS -->
+      </div>
+      
+      <div class="nav-actions">
+        <button class="btn-lang" id="btn-lang" aria-label="Toggle Language">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span id="lang-label">AR</span>
+        </button>
+        <button class="btn-download" id="btn-download">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span id="download-label">Download CV</span>
+        </button>
+        <button class="btn-mobile-menu" id="btn-mobile-menu" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="menu-icon"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div id="mobile-nav-links"></div>
+    <div class="mobile-actions">
+      <button class="btn-lang" id="btn-lang-mobile" aria-label="Toggle Language">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span id="lang-label-mobile">AR</span>
+      </button>
+      <button class="btn-download" id="btn-download-mobile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span id="download-label-mobile">CV</span>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span id="hero-badge-text"></span>
+          </div>
+          <h1 class="hero-name" id="hero-name"></h1>
+          <h2 class="hero-title" id="hero-title"></h2>
+          <p class="hero-summary" id="hero-summary"></p>
+          <div class="hero-cta">
+            <a href="#experience" class="btn-primary" id="hero-cta-primary">
+              <span id="cta-primary-text"></span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn-secondary" id="hero-cta-secondary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span id="cta-secondary-text"></span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="profile-frame">
+            <div class="profile-glow"></div>
+            <div class="profile-ring"></div>
+            <div class="profile-ring-inner"></div>
+            <img src="./profile.jpg" alt="Mohamed Asim Mohamed" class="profile-image" id="profile-img" />
+            <div class="floating-card top-right">
+              <div class="card-icon">📊</div>
+              <div class="card-label" id="float-card-1">Statistics</div>
+            </div>
+            <div class="floating-card bottom-left">
+              <div class="card-icon">🎓</div>
+              <div class="card-label" id="float-card-2">Academia</div>
+            </div>
+            <div class="floating-card mid-right">
+              <div class="card-icon">💡</div>
+              <div class="card-label" id="float-card-3">Data</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="section-container">
+        <div class="about-card fade-in-up">
+          <h2 class="about-title" id="about-title"></h2>
+          <p class="about-text" id="about-text"></p>
+          <div class="stats-row" id="stats-row">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="section-container">
+        <div class="section-header fade-in-up">
+          <h2 class="section-title" id="experience-title"></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="timeline" id="timeline">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="section-container">
+        <div class="section-header fade-in-up">
+          <h2 class="section-title" id="skills-title"></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="skills-grid" id="skills-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <div class="section-container">
+        <div class="section-header fade-in-up">
+          <h2 class="section-title" id="education-section-title"></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="edu-grid fade-in-up" id="edu-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-header fade-in-up">
+          <h2 class="contact-title" id="contact-title"></h2>
+          <p class="contact-subtitle" id="contact-subtitle"></p>
+        </div>
+        <div class="contact-cards fade-in-up" id="contact-cards">
+          <!-- Populated by JS -->
+        </div>
+        <footer class="footer">
+          <p id="footer-text"></p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
 </html>
